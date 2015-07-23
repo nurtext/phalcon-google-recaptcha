@@ -1,0 +1,17 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+.apdisk
+.afpDeleted*
+Network Trash Folder
+Temporary Items
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+app/cache/*.php
