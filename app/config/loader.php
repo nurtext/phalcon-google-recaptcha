@@ -6,12 +6,6 @@ $loader = new Phalcon\Loader();
 $loader->registerDirs(
     array(
         $config->application->controllersDir,
-        $config->application->modelsDir,
-        $config->application->elementsDir,
-        $config->application->formsDir,
-        $config->application->validatorsDir
+        $config->application->modelsDir
     )
 )->register();
-
-// Composer-Autoloader implementieren
-require '../app/vendor/autoload.php';

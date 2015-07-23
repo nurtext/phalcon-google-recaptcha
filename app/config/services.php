@@ -5,8 +5,7 @@ use Phalcon\DI\FactoryDefault,
     Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter,
     Phalcon\Mvc\View\Engine\Volt as VoltEngine,
     Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter,
-    Phalcon\Session\Adapter\Files as SessionAdapter,
-    Phalcon\Flash\Session as FlashSession;
+    Phalcon\Session\Adapter\Files as SessionAdapter;
 
 // Dependency Injector instanzieren
 $di = new FactoryDefault();
@@ -64,18 +63,4 @@ $di->set('session', function () {
     $session->start();
 
     return $session;
-});
-
-// Konfiguration bereitstellen
-$di->set('config', function() use ($config)
-{
-    return $config;
-
-});
-
-// Flash-Nachrichten implementieren
-$di->set('flash', function()
-{
-    return new FlashSession();
-
 });
